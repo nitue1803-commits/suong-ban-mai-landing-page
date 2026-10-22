@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sương Ban Mai | Giải pháp bảo vệ chuyên biệt về hệ vận động đầu tiên tại Việt Nam - Perpetuals</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration -->
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-dim": "#d6dcd0",
+          "background": "#f6fbef",
+          "on-primary-fixed": "#002202",
+          "surface-variant": "#dfe4d8",
+          "tertiary-container": "#546254",
+          "primary-container": "#0a6e14",
+          "inverse-on-surface": "#edf3e6",
+          "surface-bright": "#f6fbef",
+          "secondary-fixed": "#9ff6a7",
+          "inverse-primary": "#80db74",
+          "secondary-fixed-dim": "#83da8d",
+          "on-tertiary-fixed": "#121e14",
+          "on-secondary-fixed": "#002108",
+          "surface-container-highest": "#dfe4d8",
+          "on-tertiary": "#ffffff",
+          "tertiary-fixed-dim": "#bbcbba",
+          "secondary": "#106d2e",
+          "tertiary-fixed": "#d7e7d5",
+          "on-tertiary-fixed-variant": "#3c4a3d",
+          "on-surface-variant": "#404a3c",
+          "on-primary-fixed-variant": "#005309",
+          "error-container": "#ffdad6",
+          "primary-fixed-dim": "#80db74",
+          "on-error-container": "#93000a",
+          "on-surface": "#181d16",
+          "surface-container-lowest": "#ffffff",
+          "on-primary": "#ffffff",
+          "outline": "#707a6b",
+          "error": "#ba1a1a",
+          "secondary-container": "#9cf4a4",
+          "primary": "#005309",
+          "on-primary-container": "#91ee84",
+          "on-secondary-fixed-variant": "#00531f",
+          "surface": "#f6fbef",
+          "surface-container-low": "#f0f5e9",
+          "tertiary": "#3c4a3d",
+          "outline-variant": "#bfcab8",
+          "surface-container": "#eaf0e4",
+          "on-secondary-container": "#187132",
+          "primary-fixed": "#9bf88d",
+          "on-background": "#181d16",
+          "on-error": "#ffffff",
+          "surface-tint": "#0a6e14",
+          "on-secondary": "#ffffff",
+          "on-tertiary-container": "#cdddcb",
+          "surface-container-high": "#e5eade",
+          "inverse-surface": "#2c322a"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "1.5rem",
+          "gutter": "1rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem"
+        },
+        "fontFamily": {
+          "body-md": ["Inter", "sans-serif"],
+          "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "label-md": ["Inter", "sans-serif"]
+        }
+      }
+    }
+  }
+</script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #bfcab8;
+      border-radius: 9999px;
+    }
+</style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-base selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- TOP UTILITY BAR -->
+<header class="bg-surface-container-high/70 border-b border-outline-variant/30 hidden md:block text-on-surface-variant text-xs">
+<div class="max-w-7xl mx-auto px-4 md:px-8 py-2 flex justify-between items-center">
+<div class="flex items-center space-x-6">
+<span class="flex items-center gap-1 hover:text-secondary cursor-pointer transition-colors duration-200">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span> Khu vực: Việt Nam &amp; Quốc tế
+</span>
+<a class="hover:text-secondary transition-colors duration-200" href="#portal">Cổng hội viên E-Claim</a>
+<a class="hover:text-secondary transition-colors duration-200" href="#portal">Thanh toán phí trực tuyến (VietQR)</a>
+<a class="hover:text-secondary transition-colors duration-200" href="#dac-quyen">Hệ sinh thái số</a>
+<a class="hover:text-secondary transition-colors duration-200" href="#">Về Perpetuals</a>
+</div>
+<div class="flex items-center space-x-4">
+<a class="flex items-center gap-1.5 font-bold text-secondary hover:text-primary transition-colors" href="tel:18001786">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+          Tổng đài CSKH: 1800 1786 (Miễn cước)
+        </a>
+</div>
+</div>
+</header>
+<!-- TOP NAVIGATION -->
+<nav class="bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm sticky top-0 z-40 transition-all duration-200">
+<div class="w-full px-4 md:px-8 max-w-7xl mx-auto flex justify-between items-center py-3">
+<!-- Brand Logo -->
+<div class="flex items-center gap-3">
+<a class="flex items-center gap-2" href="#">
+<img alt="Logo Perpetuals Sương Ban Mai" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W9Y7va1_CbHEf4Gv97k0_E7ND5KEDTCYhtpUs6B-36B7Ul3kBx05fjxUsxbYBDpYVgHwo2H2DpZPqtQvl0jATjhtQR06h7yG1onU-qx_MgQFskvS-o_AltRqw59Iv5PZEu8se3lmMyKV6mNZUquMIHdHVgRdGwGWCvLO5JWFwqz__HxCoHzxi_8WCWwpmmQoNj0D50_d-iDkN44SeLTP9LsPqqoYcgh0Y81cNl9UUgr7YmmII76e5XrO8"/>
+</a>
+</div>
+<!-- Navigation Links -->
+<div class="hidden lg:flex items-center space-x-8 text-sm">
+<a class="border-b-2 border-primary text-primary font-bold pb-1 transition-colors duration-200" href="#">
+          Bảo hiểm Xương Khớp
+        </a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 py-1" href="#khac-biet">
+          Điểm khác biệt
+        </a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 py-1" href="#bang-quyen-loi">
+          Kế hoạch 3 Gói
+        </a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 py-1" href="#he-sinh-thai">
+          Hệ sinh thái số &amp; E-Claims
+        </a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 py-1" href="#portal">
+          Cổng hội viên
+        </a>
+</div>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center space-x-3">
+<button aria-label="Tìm kiếm" class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+<a class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border border-secondary text-secondary hover:bg-secondary-container/40 font-semibold text-xs transition-colors" href="#portal">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+          E-Claim 24h
+        </a>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-semibold text-xs shadow-sm transition-all duration-200" onclick="openModal()">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+          Tham gia ngay
+        </button>
+</div>
+</div>
+</nav>
+<!-- BREADCRUMB -->
+<section class="max-w-7xl mx-auto px-4 md:px-8 py-3">
+<nav class="flex text-on-surface-variant text-xs space-x-2">
+<a class="hover:text-primary" href="#">Trang chủ</a>
+<span>/</span>
+<a class="hover:text-primary" href="#">Bảo hiểm Sức Khỏe</a>
+<span>/</span>
+<a class="hover:text-primary" href="#">Chuyên Biệt Hệ Vận Động</a>
+<span>/</span>
+<span class="text-primary font-bold">Sương Ban Mai</span>
+</nav>
+</section>
+<!-- HERO SECTION -->
+<section class="max-w-7xl mx-auto px-4 md:px-8 pt-1 pb-12">
+<div class="rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md relative min-h-[540px] flex items-center" style="background-image: linear-gradient(to right, rgba(246, 251, 239, 0.96) 0%, rgba(246, 251, 239, 0.92) 50%, rgba(246, 251, 239, 0.6) 75%, rgba(246, 251, 239, 0.3) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-wwG8_99xLra1d67JqQXiiFSScUu366jVEar_aCRamsrXLhkESSJUietsfHo12x_twXClFL14KtMrsXj4xB56W924-UP7tzure0AInpUXPcYafRKgJobXGwBTZOdh8n_N9opoxLthaqk9MeJJTde2QJQXIXxC1xsXNZn8HZ-HI_H8uIe18a39et6_6tCK43qriucJeEzz9cIOsfUlAylPyX_sTFUOsObhSAsXqyOio76MtH4PdC52JyPzXGuv8_f1jA'); background-size: cover; background-position: center;">
+<!-- Left Content Column -->
+<div class="max-w-2xl p-8 md:p-14 relative z-10 backdrop-blur-[2px]">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-container/70 text-on-secondary-fixed text-xs font-bold w-fit mb-4 border border-secondary/30">
+<span class="material-symbols-outlined text-sm text-primary font-bold" style='font-variation-settings: "FILL" 1;'>spa</span>
+<span>TIÊN PHONG TẠI VIỆT NAM • PROACTIVE HEALTHCARE</span>
+</div>
+<h1 class="text-3xl md:text-5xl font-extrabold text-secondary tracking-tight mb-4 leading-tight">
+          Sương Ban Mai
+        </h1>
+<p class="text-xl md:text-2xl font-bold text-primary mb-3">
+          Giải pháp bảo vệ chuyên biệt về hệ vận động đầu tiên tại Việt Nam
+        </p>
+<p class="text-lg italic font-medium text-tertiary mb-4">
+          "Nâng niu vóc dáng, vững chất xương khớp cùng bạn đón ban mai"
+        </p>
+<p class="text-on-surface-variant text-sm md:text-base leading-relaxed mb-6">
+          Bước chuyển dịch mang tính cách mạng từ mô hình <strong>"bồi thường bị động"</strong> sang <strong>"chăm sóc chủ động"</strong>. Kết hợp tấm khiên sức khỏe toàn diện với liệu pháp điều trị xương khớp chuyên sâu, AI nhắc nhở tư thế hàng ngày, cơ chế chia sẻ quỹ tài chính gia đình và đặc quyền y tế toàn cầu <strong>bao gồm Hoa Kỳ</strong>.
+        </p>
+<!-- Key Pills -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-8 text-xs font-medium">
+<div class="flex items-center gap-2 bg-surface-container-lowest/80 p-2.5 rounded-xl border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-lg" style='font-variation-settings: "FILL" 1;'>groups</span>
+<span>Dành cho: Học sinh, sinh viên, văn phòng &amp; lao động tự do</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest/80 p-2.5 rounded-xl border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-lg" style='font-variation-settings: "FILL" 1;'>public</span>
+<span>Bảo vệ toàn cầu bao gồm cả Mỹ (Gói Tự Tại: 1.45 tỷ)</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest/80 p-2.5 rounded-xl border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-lg" style='font-variation-settings: "FILL" 1;'>diversity_1</span>
+<span>Cơ chế "Sương Che Chở": Chia sẻ quỹ hạn mức gia đình</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest/80 p-2.5 rounded-xl border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-lg" style='font-variation-settings: "FILL" 1;'>smart_toy</span>
+<span>"Trợ Lý Sương Mai" AI: Chấm điểm tư thế, giảm phí tái tục</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-4">
+<button class="px-7 py-3.5 rounded-xl bg-primary text-on-primary font-bold shadow-lg hover:bg-primary-container hover:shadow-xl transition-all duration-200 flex items-center gap-2 group" onclick="openModal()">
+            Đăng ký tham gia ngay
+            <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<a class="px-6 py-3.5 rounded-xl bg-surface-container-lowest/90 border border-outline-variant text-secondary font-bold hover:bg-surface-container transition-colors text-sm" href="#bang-quyen-loi">
+            Xem 3 gói bảo hiểm
+          </a>
+</div>
+</div>
+<!-- Floating Glass Metric Badges -->
+<div class="hidden lg:flex flex-col gap-4 absolute top-12 right-12 z-10 w-72">
+<div class="bg-surface-container-lowest/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-outline-variant/40 flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">award_star</span>
+</div>
+<div>
+<div class="text-xl font-extrabold text-secondary leading-none">1.45 TỶ</div>
+<div class="text-xs text-on-surface-variant font-medium mt-1">Hạn mức toàn cầu tối đa (gồm Mỹ)</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-outline-variant/40 flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">healing</span>
+</div>
+<div>
+<div class="text-xl font-extrabold text-primary leading-none">Chiropractic &amp; PRP</div>
+<div class="text-xs text-on-surface-variant font-medium mt-1">Ngoại trú chuyên sâu không cần nằm viện</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-outline-variant/40 flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">family_restroom</span>
+</div>
+<div>
+<div class="text-xl font-extrabold text-secondary leading-none">Sương Che Chở</div>
+<div class="text-xs text-on-surface-variant font-medium mt-1">Quỹ bảo hiểm chia sẻ người thân</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STICKY SUB-NAVIGATION BAR -->
+<nav class="sticky top-[61px] z-30 bg-surface-container-lowest border-y border-outline-variant/30 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center overflow-x-auto custom-scroll">
+<div class="flex space-x-8 py-3.5 text-on-surface-variant text-sm font-medium whitespace-nowrap">
+<a class="text-primary font-bold border-b-2 border-primary pb-3 -mb-3.5" href="#khac-biet">3 Điểm Đột Phá</a>
+<a class="hover:text-primary transition-colors pb-3" href="#dai-duong-xanh">Tại sao Perpetuals Tiên Phong?</a>
+<a class="hover:text-primary transition-colors pb-3" href="#bang-quyen-loi">3 Gói &amp; Bảng Quyền Lợi</a>
+<a class="hover:text-primary transition-colors pb-3" href="#dac-quyen">Bộ Quyền Lợi Đặc Biệt</a>
+<a class="hover:text-primary transition-colors pb-3" href="#he-sinh-thai">Hệ Sinh Thái &amp; E-Claims</a>
+<a class="hover:text-primary transition-colors pb-3" href="#portal">Cổng Khách Hàng</a>
+<a class="hover:text-primary transition-colors pb-3" href="#faq">Hỏi Đáp (FAQ)</a>
+</div>
+<div class="hidden sm:block py-2 pl-4">
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary text-xs font-bold shadow hover:bg-primary-container transition-all" onclick="openModal()">
+          Tư vấn giải pháp
+        </button>
+</div>
+</div>
+</nav>
+<!-- SECTION 1: 3 ĐIỂM KHÁC BIỆT ĐỘT PHÁ -->
+<section class="max-w-7xl mx-auto px-4 md:px-8 py-16" id="khac-biet">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-secondary-container/50 border border-secondary/30 text-on-secondary-fixed text-xs font-bold tracking-wider">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+      LỢI THẾ CẠNH TRANH ĐỘC BẢN
+    </span>
+<h2 class="text-3xl md:text-4xl font-extrabold text-secondary mt-3 mb-4">
+      3 Điểm Khác Biệt Đột Phá Của Sương Ban Mai
+    </h2>
+<p class="text-on-surface-variant text-base">
+      Giải quyết triệt để những "điểm mù" mà các dòng bảo hiểm sức khỏe truyền thống tại Việt Nam hoàn toàn bỏ ngỏ.
+    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Breakthrough 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 border border-outline-variant/40 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full group-hover:scale-150 transition-transform"></div>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/60 flex items-center justify-center text-secondary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">hourglass_bottom</span>
+</div>
+<span class="text-xs font-bold text-primary tracking-wider uppercase">Đột phá #1</span>
+<h3 class="text-xl font-bold text-secondary mt-1 mb-3">
+          Chi trả tổn thương tích lũy &amp; tần suất cao
+        </h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+          Thoát khỏi tư duy cũ chỉ bảo hiểm khi có chấn thương gãy xương do tai nạn nghiêm trọng. Sương Ban Mai bảo vệ trọn vẹn các bệnh lý tổn thương tích lũy mang tính thời đại: <strong>thoái hóa đốt sống cổ</strong>, <strong>thoái hóa khớp gối</strong>, <strong>hội chứng ống cổ tay</strong> và <strong>viêm điểm bám gân</strong> của dân văn phòng &amp; người trẻ vận động thể thao.
+        </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center text-primary font-bold text-xs">
+<span>Không loại trừ thoái hóa văn phòng</span>
+<span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</div>
+</div>
+<!-- Breakthrough 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 border border-outline-variant/40 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full group-hover:scale-150 transition-transform"></div>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/60 flex items-center justify-center text-secondary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">medical_information</span>
+</div>
+<span class="text-xs font-bold text-primary tracking-wider uppercase">Đột phá #2</span>
+<h3 class="text-xl font-bold text-secondary mt-1 mb-3">
+          Danh mục ngoại trú chuyên sâu vượt xa nằm viện
+        </h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+          Bệnh cơ xương khớp hiếm khi yêu cầu lưu viện dài ngày nhưng lại tốn kém ở khâu phục hồi. Sương Ban Mai chi trả trực tiếp cho: <strong>Nắn chỉnh cột sống Chiropractic</strong>, <strong>tiêm dịch nhờn Acid Hyaluronic (HA)</strong>, <strong>huyết tương giàu tiểu cầu (PRP) nội khớp</strong>, sóng xung kích <strong>Shockwave</strong> và gói phục hồi chức năng ngay tại nhà.
+        </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center text-primary font-bold text-xs">
+<span>Bảo lãnh liệu pháp công nghệ mới</span>
+<span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</div>
+</div>
+<!-- Breakthrough 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 border border-outline-variant/40 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full group-hover:scale-150 transition-transform"></div>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/60 flex items-center justify-center text-secondary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">flight_takeoff</span>
+</div>
+<span class="text-xs font-bold text-primary tracking-wider uppercase">Đột phá #3</span>
+<h3 class="text-xl font-bold text-secondary mt-1 mb-3">
+          Tiếp cận y tế toàn cầu (Bao gồm cả Hoa Kỳ)
+        </h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+          Với gói cao cấp Tự Tại, khách hàng xóa bỏ mọi rào cản biên giới để tiếp cận các trung tâm phẫu thuật chỉnh hình và y học tái tạo hàng đầu tại Hoa Kỳ và toàn cầu. Hạn mức chi trả lên đến <strong>1.450.000.000 VNĐ</strong> giúp bệnh nhân an tâm điều trị công nghệ ngoại vi vi phẫu mà không sợ kiệt quệ tài chính.
+        </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center text-primary font-bold text-xs">
+<span>Quyền lợi 1.45 tỷ chuẩn quốc tế</span>
+<span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: TẠI SAO PERPETUALS TIÊN PHONG KHAI PHÁ ĐẠI DƯƠNG XANH -->
+<section class="bg-surface-container-low/70 py-16 border-y border-outline-variant/30" id="dai-duong-xanh">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-5">
+<span class="text-xs font-bold text-primary uppercase tracking-widest flex items-center gap-2">
+<span class="material-symbols-outlined text-base">explore</span>
+          CHIẾN LƯỢC ĐẠI DƯƠNG XANH
+        </span>
+<h2 class="text-3xl font-extrabold text-secondary mt-2 mb-4 leading-snug">
+          Tại sao Perpetuals tiên phong khai phá thị trường này?
+        </h2>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+          Thị trường bảo hiểm truyền thống trước đây luôn né tránh hệ cơ xương khớp vì e ngại 3 rào cản kỹ thuật khổng lồ. Bằng công nghệ định phí tiên tiến và liên minh y tế mở rộng, Perpetuals đã biến thách thức thành ưu thế độc quyền.
+        </p>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center font-bold text-lg">
+            90d
+          </div>
+<div>
+<div class="font-bold text-secondary text-sm">Thời gian chờ chuẩn hóa 90 ngày</div>
+<div class="text-xs text-on-surface-variant mt-0.5">Áp dụng công bằng, bảo vệ minh bạch cho cả khách hàng và quỹ rủi ro chung.</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-4">
+<!-- Barrier 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-2xl">analytics</span>
+</div>
+<div>
+<h4 class="font-bold text-secondary text-base mb-1">1. Hóa giải khoảng trống dữ liệu định phí ngoại trú</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+            Các hãng khác thiếu dữ liệu chi phí thực tế cho nắn chỉnh và phục hồi chức năng ngoại trú. Perpetuals ứng dụng mô hình AI Actuarial phân tích hành vi cơ thể học, cho phép định phí chính xác từng buổi nắn chỉnh, tiêm HA và sóng shockwave.
+          </p>
+</div>
+</div>
+<!-- Barrier 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-2xl">shield_locked</span>
+</div>
+<div>
+<h4 class="font-bold text-secondary text-base mb-1">2. Kiểm soát nguy cơ bùng nổ tỷ lệ bồi thường do trục lợi</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+            Thay vì hạn chế dịch vụ, Perpetuals xây dựng phác đồ giám định chuẩn y khoa (Evidence-based Clinical Pathways) kết hợp đối chiếu hồ sơ MRI/CT và theo dõi nhật ký điều trị thông minh trên ứng dụng số nhằm bảo đảm bồi thường đúng người, đúng bệnh.
+          </p>
+</div>
+</div>
+<!-- Barrier 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-2xl">handshake</span>
+</div>
+<div>
+<h4 class="font-bold text-secondary text-base mb-1">3. Năng lực đàm phán giá trọn gói (Package Pricing)</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+            Ký kết hợp tác chiến lược với mạng lưới bệnh viện quốc tế và hệ thống phòng khám Chiropractic uy tín, Perpetuals đưa ra đơn giá gói điều trị tối ưu nhất, bảo lãnh viện phí tức thời mà khách hàng cá nhân không thể tự thương lượng.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: BẢNG SO SÁNH 3 GÓI BẢO HIỂM CHÍNH XÁC 100% -->
+<section class="max-w-7xl mx-auto px-4 md:px-8 py-16" id="bang-quyen-loi">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<span class="text-xs font-bold text-primary uppercase tracking-wider">CẤU TRÚC 3 GÓI SẢN PHẨM</span>
+<h2 class="text-3xl md:text-4xl font-extrabold text-secondary mt-1">
+      Bảng Quyền Lợi Chi Tiết Sương Ban Mai
+    </h2>
+<p class="text-on-surface-variant text-sm mt-2">
+      Số liệu đối soát quyền lợi chuẩn xác 100% theo tài liệu thiết kế sản phẩm Perpetuals.
+    </p>
+</div>
+<!-- Comparison Matrix Table -->
+<div class="bg-surface-container-lowest rounded-3xl shadow-sm border border-outline-variant/40 overflow-hidden">
+<div class="overflow-x-auto custom-scroll">
+<table class="w-full text-left border-collapse min-w-[850px]">
+<thead>
+<tr class="border-b border-outline-variant/30 bg-surface-container-low/80">
+<th class="p-5 text-secondary font-bold text-base w-[34%]">Quyền lợi &amp; Hạn mức chi trả</th>
+<th class="p-5 text-center w-[22%]">
+<div class="font-extrabold text-lg text-on-surface">Gói Dẻo Dai</div>
+<div class="text-xs text-on-surface-variant font-medium mt-0.5">Cơ bản • Địa lý Việt Nam</div>
+</th>
+<th class="p-5 text-center w-[22%] bg-secondary-container/30 relative">
+<span class="absolute top-0 right-1/2 translate-x-1/2 bg-primary text-on-primary text-[10px] font-bold px-3 py-0.5 rounded-b shadow-sm uppercase tracking-wider">
+              Khuyên dùng nhiều nhất
+            </span>
+<div class="font-extrabold text-lg text-secondary mt-2">Gói Vững Chãi</div>
+<div class="text-xs text-primary font-bold mt-0.5">Nâng cao • Địa lý Việt Nam</div>
+</th>
+<th class="p-5 text-center w-[22%] bg-primary/5">
+<div class="font-extrabold text-lg text-primary">Gói Tự Tại</div>
+<div class="text-xs text-primary font-bold mt-0.5">Toàn diện &amp; Chuyên sâu • Toàn cầu (gồm Mỹ)</div>
+</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20 text-xs md:text-sm">
+<!-- Tổng quyền lợi tối đa -->
+<tr class="bg-surface-container-low/20">
+<td class="p-4 font-bold text-secondary">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+            Tổng quyền lợi tối đa / năm
+          </div>
+</td>
+<td class="p-4 text-center font-extrabold text-on-surface text-base">70.000.000 đ</td>
+<td class="p-4 text-center font-extrabold text-secondary bg-secondary-container/20 text-base">170.000.000 đ</td>
+<td class="p-4 text-center font-extrabold text-primary bg-primary/5 text-base">
+          1.450.000.000 đ
+          <div class="text-[10px] text-tertiary font-semibold">Quyền lợi y tế toàn cầu tại Mỹ</div>
+</td>
+</tr>
+<!-- Hạn mức ngoại trú/năm -->
+<tr>
+<td class="p-4 font-semibold text-on-surface">
+          Hạn mức điều trị ngoại trú / năm
+        </td>
+<td class="p-4 text-center text-on-surface-variant">
+          5.000.000 đ<br/>
+<span class="text-[11px] text-on-surface-variant/80">(Tối đa 500k/lần, 10 lần)</span>
+</td>
+<td class="p-4 text-center font-semibold text-secondary bg-secondary-container/10">
+          12.000.000 đ<br/>
+<span class="text-[11px] text-secondary/80">(Tối đa 800k/lần, 15 lần)</span>
+</td>
+<td class="p-4 text-center font-bold text-primary bg-primary/5">
+          400.000.000 đ<br/>
+<span class="text-[11px] text-primary/80">(Tối đa 20tr/lần, 20 lần)</span>
+</td>
+</tr>
+<!-- Nội trú có phẫu thuật -->
+<tr>
+<td class="p-4 font-semibold text-on-surface">
+          Nội trú có phẫu thuật / năm
+        </td>
+<td class="p-4 text-center text-on-surface-variant">20.000.000 đ</td>
+<td class="p-4 text-center font-semibold text-secondary bg-secondary-container/10">80.000.000 đ</td>
+<td class="p-4 text-center font-bold text-primary bg-primary/5">500.000.000 đ</td>
+</tr>
+<!-- Nội trú không phẫu thuật -->
+<tr>
+<td class="p-4 font-semibold text-on-surface">
+          Nội trú không phẫu thuật / năm
+        </td>
+<td class="p-4 text-center text-on-surface-variant">8.000.000 đ</td>
+<td class="p-4 text-center font-semibold text-secondary bg-secondary-container/10">15.000.000 đ</td>
+<td class="p-4 text-center font-bold text-primary bg-primary/5">50.000.000 đ</td>
+</tr>
+<!-- Tiền phòng/ngày -->
+<tr>
+<td class="p-4 font-semibold text-on-surface">
+          Tiền phòng / ngày (Tối đa 30 ngày/năm)
+        </td>
+<td class="p-4 text-center text-on-surface-variant">500.000 đ / ngày</td>
+<td class="p-4 text-center font-semibold text-secondary bg-secondary-container/10">800.000 đ / ngày</td>
+<td class="p-4 text-center font-bold text-primary bg-primary/5">5.000.000 đ / ngày</td>
+</tr>
+<!-- Liệu pháp xương khớp chuyên sâu -->
+<tr class="bg-surface-container-low/30">
+<td class="p-4 font-bold text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">vaccines</span>
+            Liệu pháp xương khớp chuyên sâu (Tiêm HA / Shockwave / PRP)
+          </div>
+</td>
+<td class="p-4 text-center text-on-surface-variant">
+          5.000.000 đ<br/><span class="text-[11px]">(Tối đa 3 lần/năm)</span>
+</td>
+<td class="p-4 text-center font-bold text-secondary bg-secondary-container/20">
+          8.000.000 đ<br/><span class="text-[11px]">(Tối đa 4 lần/năm)</span>
+</td>
+<td class="p-4 text-center font-bold text-primary bg-primary/5">
+          50.000.000 đ<br/><span class="text-[11px]">(Tối đa 6 lần/năm)</span>
+</td>
+</tr>
+<!-- "Sương Che Chở" -->
+<tr>
+<td class="p-4 font-semibold text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">family_restroom</span>
+            "Sương Che Chở" (Chia sẻ hạn mức thành viên gia đình)
+          </div>
+</td>
+<td class="p-4 text-center text-on-surface-variant">3.000.000 đ</td>
+<td class="p-4 text-center font-semibold text-secondary bg-secondary-container/10">5.000.000 đ</td>
+<td class="p-4 text-center font-bold text-primary bg-primary/5">15.000.000 đ</td>
+</tr>
+<!-- "Sương Tầm Soát" -->
+<tr>
+<td class="p-4 font-semibold text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">radiology</span>
+            "Sương Tầm Soát" (Miễn phí chụp X-quang / Đo loãng xương DEXA)
+          </div>
+</td>
+<td class="p-4 text-center font-semibold text-primary">1 lần / năm</td>
+<td class="p-4 text-center font-semibold text-primary bg-secondary-container/10">1 lần / năm</td>
+<td class="p-4 text-center font-semibold text-primary bg-primary/5">1 lần / năm</td>
+</tr>
+<!-- "Sương Hồi Xương" -->
+<tr>
+<td class="p-4 font-semibold text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">emergency</span>
+            "Sương Hồi Xương" (Trợ cấp gãy xương, tối đa 3 tháng)
+          </div>
+</td>
+<td class="p-4 text-center text-on-surface-variant">2.000.000 đ / tháng</td>
+<td class="p-4 text-center font-semibold text-secondary bg-secondary-container/10">3.500.000 đ / tháng</td>
+<td class="p-4 text-center font-bold text-primary bg-primary/5">15.000.000 đ / tháng</td>
+</tr>
+<!-- "Sương Bồi Đắp" -->
+<tr>
+<td class="p-4 font-semibold text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">trending_up</span>
+            "Sương Bồi Đắp" (Tăng hạn mức cho khách hàng trung thành)
+          </div>
+</td>
+<td class="p-4 text-center text-on-surface-variant text-[11px] leading-tight">
+          +15% (Năm 3)<br/>+20% (Năm 5)<br/>+25% (Năm 10)
+        </td>
+<td class="p-4 text-center font-semibold text-secondary bg-secondary-container/10 text-[11px] leading-tight">
+          +15% (Năm 3)<br/>+20% (Năm 5)<br/>+25% (Năm 10)
+        </td>
+<td class="p-4 text-center font-bold text-primary bg-primary/5 text-[11px] leading-tight">
+          +15% (Năm 3)<br/>+20% (Năm 5)<br/>+25% (Năm 10)
+        </td>
+</tr>
+<!-- "Sương Vận Động" & "Trợ Lý Sương Mai" -->
+<tr class="bg-surface-container-low/30">
+<td class="p-4 font-semibold text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">fitness_center</span>
+            "Sương Vận Động" &amp; Ứng dụng AI "Trợ Lý Sương Mai"
+          </div>
+</td>
+<td class="p-4 text-center text-xs text-on-surface-variant">
+          Giảm 20% phòng tập<br/>AI nhắc tư thế + Tích điểm
+        </td>
+<td class="p-4 text-center text-xs font-semibold text-secondary bg-secondary-container/10">
+          Giảm 30% phòng tập<br/>AI nhắc tư thế + Tích điểm
+        </td>
+<td class="p-4 text-center text-xs font-bold text-primary bg-primary/5">
+          Giảm 40% đối tác cao cấp<br/>AI nhắc tư thế + Tích điểm
+        </td>
+</tr>
+<!-- CTA Rows -->
+<tr>
+<td class="p-4"></td>
+<td class="p-4 text-center">
+<button class="w-full py-2.5 rounded-xl border border-secondary text-secondary hover:bg-secondary hover:text-white font-bold text-xs transition-all" onclick="openModal()">
+            Đăng ký gói Dẻo Dai
+          </button>
+</td>
+<td class="p-4 text-center bg-secondary-container/20">
+<button class="w-full py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-bold text-xs shadow-md transition-all" onclick="openModal()">
+            Đăng ký gói Vững Chãi
+          </button>
+</td>
+<td class="p-4 text-center bg-primary/5">
+<button class="w-full py-2.5 rounded-xl bg-secondary text-white hover:bg-secondary/90 font-bold text-xs shadow-md transition-all" onclick="openModal()">
+            Đăng ký gói Tự Tại
+          </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- THÔNG TIN KỸ THUẬT CHUNG -->
+<div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl">person_pin</span>
+<div>
+<div class="font-bold text-secondary text-sm">Độ tuổi tham gia</div>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+        Từ <strong>16 đến 65 tuổi</strong>. Gia hạn hàng năm liên tục đến <strong>75 tuổi</strong> (phạm vi bảo vệ rộng trọn vòng đời).
+      </p>
+</div>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3.5 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-2xl">event_repeat</span>
+<div>
+<div class="font-bold text-secondary text-sm">Thời hạn hợp đồng &amp; đóng phí</div>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+<strong>01 năm</strong>, tái tục linh hoạt hàng năm qua cổng thanh toán số VietQR hoặc trích nợ tự động.
+      </p>
+</div>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3.5 shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-2xl">timer</span>
+<div>
+<div class="font-bold text-secondary text-sm">Thời gian chờ chuẩn hóa</div>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+<strong>90 ngày</strong> cho các bệnh lý xương khớp tích lũy. Không áp dụng thời gian chờ đối với chấn thương do tai nạn.
+      </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: BỘ QUYỀN LỢI ĐẶC BIỆT CHI TIẾT (Bento style) -->
+<section class="max-w-7xl mx-auto px-4 md:px-8 py-16" id="dac-quyen">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<span class="text-xs font-bold text-primary uppercase tracking-wider">CHĂM SÓC CHỦ ĐỘNG &amp; GẮN KẾT GIA ĐÌNH</span>
+<h2 class="text-3xl md:text-4xl font-extrabold text-secondary mt-1">
+      Hệ Thống Đặc Quyền Độc Quyền Sương Ban Mai
+    </h2>
+<p class="text-on-surface-variant text-sm mt-2">
+      Đồng hành trọn vẹn cùng thể chất của bạn qua từng giai đoạn phòng ngừa, phát hiện sớm và điều trị.
+    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Sương Che Chở -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container/60 text-secondary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">diversity_1</span>
+</div>
+<h3 class="text-lg font-bold text-secondary mb-2">"Sương Che Chở" - Chia sẻ gia đình</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+        Cho phép linh hoạt chia sẻ hạn mức y tế từ <strong>3.000.000 đ đến 15.000.000 đ</strong> giữa các thành viên cùng tham gia bảo hiểm trong gia đình, tối ưu hóa ngân sách khi người thân có nhu cầu điều trị đột xuất.
+      </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs font-bold text-primary">
+      Hạn mức tối đa 15 triệu/năm
+    </div>
+</div>
+<!-- Sương Tầm Soát -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">radiology</span>
+</div>
+<h3 class="text-lg font-bold text-secondary mb-2">"Sương Tầm Soát" - Đo mật độ xương</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+        Đặc quyền miễn phí <strong>chụp X-quang hoặc đo mật độ xương DEXA 1 lần/năm</strong> tại các trung tâm y khoa chất lượng cao. Chủ động phát hiện nguy cơ loãng xương, gai thoái hóa từ giai đoạn tiền lâm sàng.
+      </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs font-bold text-primary">
+      Áp dụng trọn vẹn cho cả 3 gói
+    </div>
+</div>
+<!-- Sương Hồi Xương -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">healing</span>
+</div>
+<h3 class="text-lg font-bold text-secondary mb-2">"Sương Hồi Xương" - Trợ cấp gãy xương</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+        Chi trả trợ cấp thu nhập khi phải cố định chi do nứt/gãy xương: từ <strong>2.000.000 đ đến 15.000.000 đ/tháng</strong> (tối đa liên tục 3 tháng), bù đắp gián đoạn công việc cho người lao động.
+      </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs font-bold text-primary">
+      Hỗ trợ sinh hoạt phí tức thì
+    </div>
+</div>
+<!-- Sương Bồi Đắp -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container/60 text-secondary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">auto_graph</span>
+</div>
+<h3 class="text-lg font-bold text-secondary mb-2">"Sương Bồi Đắp" - Thưởng trung thành</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+        Gia tăng giá trị hợp đồng lũy tiến theo thời gian gắn bó: tự động <strong>+15% hạn mức ở năm thứ 3</strong>, <strong>+20% ở năm thứ 5</strong>, và <strong>+25% ở năm thứ 10</strong> mà không tăng phí bổ sung.
+      </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs font-bold text-primary">
+      Tăng hạn mức đến 25% miễn phí
+    </div>
+</div>
+<!-- Sương Vận Động -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">fitness_center</span>
+</div>
+<h3 class="text-lg font-bold text-secondary mb-2">"Sương Vận Động" - Mạng lưới phòng tập</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+        Ưu đãi giảm giá độc quyền từ <strong>20% đến 40%</strong> tại hệ thống phòng gym, pilates, yoga và trung tâm vật lý trị liệu đối tác chiến lược của Perpetuals trên cả nước.
+      </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs font-bold text-primary">
+      Giảm đến 40% chi phí thể thao
+    </div>
+</div>
+<!-- Trợ Lý Sương Mai -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">smart_toy</span>
+</div>
+<h3 class="text-lg font-bold text-secondary mb-2">"Trợ Lý Sương Mai" - AI nhắc nhở tư thế</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+        Trợ lý thông minh tích hợp trên camera máy tính/điện thoại: nhận diện tư thế gù lưng rùa, nhắc nhở đứng dậy vận động định kỳ và tích lũy điểm thưởng khấu trừ trực tiếp vào phí tái tục hàng năm.
+      </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs font-bold text-primary">
+      Đổi điểm thưởng trừ vào phí tái tục
+    </div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: HỆ SINH THÁI SỐ & E-CLAIMS TỰ ĐỘNG -->
+<section class="bg-surface-container-low/70 py-16 border-y border-outline-variant/30" id="he-sinh-thai">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-xs font-bold text-primary uppercase tracking-wider">TRẢI NGHIỆM KHÔNG GIẤY TỜ</span>
+<h2 class="text-3xl md:text-4xl font-extrabold text-secondary mt-1">
+      Hệ Sinh Thái Số Khép Kín &amp; E-Claims Tự Động
+    </h2>
+<p class="text-on-surface-variant text-sm mt-2">
+      Quy trình "Sở hữu" và thanh toán bồi thường 100% trực tuyến chỉ với vài thao tác chạm trên điện thoại di động.
+    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 flex flex-col items-center text-center shadow-sm">
+<div class="w-12 h-12 rounded-full bg-secondary text-white text-lg font-extrabold flex items-center justify-center mb-4 shadow">
+        1
+      </div>
+<h4 class="font-bold text-secondary text-base mb-2">Khảo sát &amp; Đăng ký Online</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+        Điền thông tin và bảng câu hỏi sức khỏe trực tuyến trong 3 phút trên nền tảng web hoặc ứng dụng Perpetuals.
+      </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 flex flex-col items-center text-center shadow-sm">
+<div class="w-12 h-12 rounded-full bg-primary text-white text-lg font-extrabold flex items-center justify-center mb-4 shadow">
+        2
+      </div>
+<h4 class="font-bold text-secondary text-base mb-2">Thẩm định AI &amp; Nhận e-Policy</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+        Hệ thống tự động thẩm định rủi ro tức thì và phát hành Hợp đồng điện tử (e-Policy) cùng thẻ bảo lãnh số có giá trị pháp lý.
+      </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 flex flex-col items-center text-center shadow-sm">
+<div class="w-12 h-12 rounded-full bg-secondary text-white text-lg font-extrabold flex items-center justify-center mb-4 shadow">
+        3
+      </div>
+<h4 class="font-bold text-secondary text-base mb-2">E-Claims 1 Chạm</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+        Chụp ảnh chứng từ khám, kết quả MRI, hóa đơn viện phí tải thẳng lên app, triệt tiêu hoàn toàn gánh nặng hồ sơ giấy bản gốc.
+      </p>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 flex flex-col items-center text-center shadow-sm">
+<div class="w-12 h-12 rounded-full bg-primary text-white text-lg font-extrabold flex items-center justify-center mb-4 shadow">
+        4
+      </div>
+<h4 class="font-bold text-secondary text-base mb-2">Giải ngân bồi thường 24h</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+        Hội đồng y khoa số xét duyệt tự động, giải ngân tiền bồi thường tức thì chuyển khoản vào tài khoản ngân hàng chính chủ.
+      </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CUSTOMER PORTAL (Giữ nguyên tính năng, cập nhật đồng bộ màu và tên gói) -->
+<section class="max-w-7xl mx-auto px-4 md:px-8 py-16" id="portal">
+<div class="bg-surface-container-lowest rounded-3xl border border-outline-variant/30 shadow-md p-6 md:p-10">
+<!-- Portal Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-8 border-b border-outline-variant/20 gap-4">
+<div>
+<div class="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider">
+<span class="material-symbols-outlined text-lg">verified</span>
+          CỔNG THÔNG TIN KHÁCH HÀNG SƯƠNG BAN MAI • PERPETUALS
+        </div>
+<h2 class="text-2xl md:text-3xl font-extrabold text-secondary mt-1">
+          Không Gian Quản Lý Thẻ &amp; Bồi Thường E-Claim
+        </h2>
+</div>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed text-xs font-bold border border-secondary/30">
+<span class="w-2 h-2 rounded-full bg-primary mr-2 animate-ping"></span>
+          Hệ thống hoạt động 24/7
+        </span>
+</div>
+</div>
+<!-- Portal Navigation Tabs -->
+<div class="flex border-b border-outline-variant/20 mt-6 gap-3 sm:gap-6 overflow-x-auto">
+<button class="pb-3 text-primary font-bold border-b-2 border-primary text-sm flex items-center gap-2 whitespace-nowrap" id="tab-btn-1" onclick="switchPortalTab(1)">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+        Thẻ Bảo Hiểm &amp; Đóng Phí VietQR
+      </button>
+<button class="pb-3 text-on-surface-variant hover:text-primary font-medium text-sm flex items-center gap-2 whitespace-nowrap" id="tab-btn-2" onclick="switchPortalTab(2)">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+        Nộp yêu cầu E-Claim
+      </button>
+<button class="pb-3 text-on-surface-variant hover:text-primary font-medium text-sm flex items-center gap-2 whitespace-nowrap" id="tab-btn-3" onclick="switchPortalTab(3)">
+<span class="material-symbols-outlined text-[18px]">track_changes</span>
+        Theo dõi tiến độ bồi thường
+      </button>
+</div>
+<!-- Tab Content 1: Policy Card & VietQR Payment -->
+<div class="pt-8" id="tab-content-1">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Virtual Insurance Card -->
+<div class="lg:col-span-6 bg-gradient-to-br from-secondary via-secondary to-[#002202] text-white p-7 rounded-2xl shadow-xl relative overflow-hidden flex flex-col justify-between min-h-[260px]">
+<div class="absolute -right-8 -bottom-8 opacity-10">
+<span class="material-symbols-outlined text-[200px]">spa</span>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<div class="text-xs uppercase tracking-wider text-secondary-fixed opacity-90">Tập đoàn Bảo hiểm Perpetuals</div>
+<div class="text-2xl font-black mt-1">Sương Ban Mai</div>
+<div class="text-[11px] bg-secondary-container text-on-secondary-fixed font-bold px-2.5 py-0.5 rounded-full inline-block mt-1">Gói Vững Chãi (Nâng cao)</div>
+</div>
+<span class="material-symbols-outlined text-4xl text-secondary-fixed">contactless</span>
+</div>
+<div class="my-6">
+<div class="text-xs text-secondary-fixed/80">Số Thẻ Bảo Lãnh / Hợp Đồng Điện Tử</div>
+<div class="font-mono text-xl tracking-widest font-bold mt-0.5">PP-SBM-88921-VN</div>
+</div>
+<div class="flex justify-between items-end text-xs">
+<div>
+<div class="text-secondary-fixed/80">Người Được Bảo Hiểm</div>
+<div class="font-bold text-sm uppercase">NGUYỄN VĂN AN</div>
+</div>
+<div class="text-right">
+<div class="text-secondary-fixed/80">Hạn Mức Ngoại Trú / Tổng Hạn Mức</div>
+<div class="font-bold text-sm">12 Tr / 170 Triệu</div>
+</div>
+</div>
+</div>
+<!-- Payment Info & VietQR Code -->
+<div class="lg:col-span-6 bg-surface-container-low p-6 rounded-2xl border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-4">
+<span class="text-base font-bold text-secondary">Kỳ phí tái tục 01 năm sắp tới</span>
+<span class="px-2.5 py-1 bg-secondary-container text-on-secondary-fixed text-xs font-bold rounded-md">Hạn nộp: 15/05/2024</span>
+</div>
+<div class="flex items-center gap-6">
+<!-- Mock QR Code representation -->
+<div class="w-32 h-32 bg-white p-2 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center justify-center flex-shrink-0">
+<div class="w-full h-full bg-slate-900 rounded flex flex-col items-center justify-center text-white text-[10px] p-2 text-center">
+<span class="material-symbols-outlined text-3xl text-secondary-fixed mb-1">qr_code_2</span>
+<span>VietQR Tức Thì</span>
+</div>
+</div>
+<div class="space-y-1.5 text-xs">
+<div><span class="text-on-surface-variant">Phí gia hạn:</span> <strong class="text-base text-primary font-bold">2.100.000 VNĐ</strong></div>
+<div><span class="text-on-surface-variant">Điểm Trợ Lý Sương Mai:</span> <strong class="text-secondary font-bold">-150.000 đ (Đã trừ)</strong></div>
+<div><span class="text-on-surface-variant">Ngân hàng:</span> <strong>Vietcombank (Hội sở chính)</strong></div>
+<div><span class="text-on-surface-variant">Số tài khoản:</span> <strong class="font-mono">1028399182</strong></div>
+<div><span class="text-on-surface-variant">Nội dung CK:</span> <strong class="font-mono bg-white px-1.5 py-0.5 rounded border border-outline-variant/30">DONGPHI PP-SBM-88921</strong></div>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex flex-wrap gap-3">
+<button class="px-4 py-2 bg-primary text-white rounded-lg text-xs font-bold hover:bg-primary-container transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">receipt_long</span> Tải hóa đơn điện tử e-Invoice
+          </button>
+<button class="px-4 py-2 bg-white border border-outline-variant/40 text-on-surface rounded-lg text-xs font-semibold hover:bg-surface-container transition-colors">
+            Cập nhật thẻ người thân ("Sương Che Chở")
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab Content 2: E-Claim Upload Form -->
+<div class="pt-8 hidden" id="tab-content-2">
+<form class="max-w-3xl mx-auto space-y-6" onsubmit="handleClaimSubmit(event)">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs font-bold text-secondary mb-1">Mã hợp đồng e-Policy</label>
+<input class="w-full bg-surface-container border border-outline-variant/40 rounded-xl px-4 py-3 text-sm font-mono text-on-surface cursor-not-allowed" readonly="" type="text" value="PP-SBM-88921-VN"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-secondary mb-1">Dịch vụ yêu cầu chi trả *</label>
+<select class="w-full bg-white border border-outline-variant/40 rounded-xl px-4 py-3 text-sm focus:border-primary focus:ring-1 focus:ring-primary" required="">
+<option value="">-- Vui lòng chọn dịch vụ --</option>
+<option value="ngoai_tru">Khám ngoại trú chuyên khoa Xương Khớp</option>
+<option value="chiro">Nắn chỉnh cột sống Chiropractic</option>
+<option value="ha_prp">Tiêm dịch nhờn Acid Hyaluronic (HA) / Liệu pháp PRP</option>
+<option value="shockwave">Trị liệu sóng xung kích Shockwave</option>
+<option value="gay_xuong">Trợ cấp gãy xương ("Sương Hồi Xương")</option>
+<option value="phau_thuat">Phẫu thuật tái tạo dây chằng / Thay khớp</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs font-bold text-secondary mb-1">Ngày thực hiện trị liệu / Thăm khám *</label>
+<input class="w-full bg-white border border-outline-variant/40 rounded-xl px-4 py-3 text-sm focus:border-primary focus:ring-1 focus:ring-primary" required="" type="date"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-secondary mb-1">Số tiền yêu cầu bồi thường (VNĐ) *</label>
+<input class="w-full bg-white border border-outline-variant/40 rounded-xl px-4 py-3 text-sm focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Ví dụ: 800000" required="" type="number"/>
+</div>
+</div>
+<!-- Drag & Drop Upload -->
+<div>
+<label class="block text-xs font-bold text-secondary mb-1">Hóa đơn điện tử &amp; Chỉ định bác sĩ (Ảnh chụp/PDF) *</label>
+<div class="border-2 border-dashed border-outline-variant rounded-2xl p-8 text-center bg-surface-container-low/40 hover:bg-surface-container-low transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-primary mb-2">cloud_upload</span>
+<p class="text-sm font-semibold text-secondary">Kéo thả chứng từ vào đây hoặc <span class="text-primary underline">chọn tệp từ thiết bị</span></p>
+<p class="text-xs text-on-surface-variant mt-1">Hỗ trợ JPG, PNG, PDF tối đa 15MB (Hóa đơn VAT, Phiếu chỉ định Chiropractic/tiêm HA, kết quả MRI)</p>
+</div>
+</div>
+<!-- Bank Info -->
+<div class="bg-surface-container-low p-5 rounded-2xl border border-outline-variant/30 space-y-4">
+<h4 class="font-bold text-secondary text-xs uppercase tracking-wide">Tài khoản nhận chi trả tức thời</h4>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div>
+<label class="block text-xs font-medium text-on-surface-variant mb-1">Ngân hàng</label>
+<input class="w-full bg-white border border-outline-variant/40 rounded-lg px-3 py-2 text-xs" placeholder="VD: Vietcombank" required="" type="text" value="Vietcombank"/>
+</div>
+<div>
+<label class="block text-xs font-medium text-on-surface-variant mb-1">Số tài khoản</label>
+<input class="w-full bg-white border border-outline-variant/40 rounded-lg px-3 py-2 text-xs" placeholder="VD: 001100..." required="" type="text" value="0071001234567"/>
+</div>
+<div>
+<label class="block text-xs font-medium text-on-surface-variant mb-1">Chủ tài khoản</label>
+<input class="w-full bg-white border border-outline-variant/40 rounded-lg px-3 py-2 text-xs uppercase" placeholder="NGUYEN VAN AN" required="" type="text" value="NGUYEN VAN AN"/>
+</div>
+</div>
+</div>
+<div class="text-right">
+<button class="px-8 py-3 bg-primary text-white font-bold rounded-xl shadow-md hover:bg-primary-container transition-all text-sm" type="submit">
+          Gửi E-Claim lên hệ thống Perpetuals
+        </button>
+</div>
+</form>
+</div>
+<!-- Tab Content 3: Claim Tracker -->
+<div class="pt-8 hidden" id="tab-content-3">
+<div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-6 border-b border-outline-variant/20 gap-3">
+<div>
+<span class="text-xs font-mono bg-white px-2.5 py-1 rounded border border-outline-variant/30 font-bold text-secondary">Hồ sơ: #CLM-2024-0582</span>
+<h3 class="text-base font-bold text-secondary mt-1">Điều trị Thoái Hóa Khớp Gối &amp; Tiêm Acid Hyaluronic</h3>
+<p class="text-xs text-on-surface-variant">Nộp ngày 12/05/2024 • Phòng khám Chuyên khoa Cơ Xương Khớp Tâm Anh</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed text-xs font-bold border border-secondary/30">
+        Đang giải ngân bồi thường (Bước 3/3)
+      </span>
+</div>
+<!-- Progress Bar -->
+<div class="py-8">
+<div class="relative">
+<div class="absolute top-1/2 left-0 right-0 h-1 bg-outline-variant/40 -translate-y-1/2 z-0"></div>
+<div class="absolute top-1/2 left-0 w-full h-1 bg-primary -translate-y-1/2 z-0"></div>
+<div class="relative z-10 flex justify-between">
+<!-- Step 1 Complete -->
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold ring-4 ring-white">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="text-xs font-bold text-secondary mt-2">Tiếp nhận E-Claim</span>
+<span class="text-[10px] text-on-surface-variant">12/05/2024</span>
+</div>
+<!-- Step 2 Complete -->
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold ring-4 ring-white">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="text-xs font-bold text-secondary mt-2">Thẩm định AI &amp; Bác sĩ</span>
+<span class="text-[10px] text-on-surface-variant">12/05/2024</span>
+</div>
+<!-- Step 3 In Progress -->
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center text-xs font-bold ring-4 ring-white animate-pulse">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+</div>
+<span class="text-xs font-bold text-primary mt-2">Chuyển tiền bồi thường</span>
+<span class="text-[10px] text-primary font-bold">Dự kiến trong ngày</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl border border-outline-variant/20 text-xs text-on-surface-variant space-y-1">
+<div><strong>Nhật ký tự động:</strong> Hồ sơ đã được thẩm định tự động qua hóa đơn điện tử VAT và phiếu chỉ định tiêm HA nội khớp hợp lệ. Đã duyệt lệnh chuyển khoản hạn mức ngoại trú <strong>800.000 VNĐ</strong> tới STK 0071001234567 (Vietcombank).</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: FAQ ACCORDION -->
+<section class="max-w-4xl mx-auto px-4 md:px-8 py-16" id="faq">
+<div class="text-center mb-12">
+<span class="text-xs font-bold text-primary uppercase tracking-wider">GIẢI ĐÁP TOÀN DIỆN</span>
+<h2 class="text-3xl font-extrabold text-secondary mt-1">
+      Câu Hỏi Thường Gặp Về Sương Ban Mai
+    </h2>
+</div>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex justify-between items-center text-base font-bold text-secondary hover:bg-surface-container-low/40 transition-colors" onclick="toggleAccordion('faq-1')">
+<span>Tại sao Gói Tự Tại có hạn mức vượt trội lên đến 1.450.000.000 đ?</span>
+<span class="material-symbols-outlined transition-transform duration-200" id="faq-1-icon">expand_more</span>
+</button>
+<div class="hidden p-5 pt-0 text-on-surface-variant text-xs md:text-sm leading-relaxed border-t border-outline-variant/10" id="faq-1">
+        Gói <strong>Tự Tại</strong> được thiết kế cho phạm vi địa lý bảo vệ <strong>Toàn cầu bao gồm cả Hoa Kỳ</strong>. Do chi phí y tế và phẫu thuật chỉnh hình cơ xương khớp tại Mỹ có sự chênh lệch lớn, mức hạn mức 1.45 tỷ cùng 400 triệu ngoại trú giúp khách hàng hoàn toàn an tâm tiếp cận các chuyên gia đầu ngành thế giới, phẫu thuật tái tạo khớp công nghệ cao mà không phải tự bù viện phí đắt đỏ.
+      </div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex justify-between items-center text-base font-bold text-secondary hover:bg-surface-container-low/40 transition-colors" onclick="toggleAccordion('faq-2')">
+<span>Điều kiện để áp dụng cơ chế chia sẻ hạn mức "Sương Che Chở" trong gia đình?</span>
+<span class="material-symbols-outlined transition-transform duration-200" id="faq-2-icon">expand_more</span>
+</button>
+<div class="hidden p-5 pt-0 text-on-surface-variant text-xs md:text-sm leading-relaxed border-t border-outline-variant/10" id="faq-2">
+        Khi có từ 02 thành viên có quan hệ nhân thân (vợ/chồng, cha mẹ, con cái) cùng tham gia bất kỳ gói nào của Sương Ban Mai, quỹ "Sương Che Chở" sẽ được kích hoạt tự động. Ví dụ: ở gói Vững Chãi, khi một thành viên vượt hạn mức ngoại trú cá nhân, có thể dùng quỹ chung 5.000.000 đ từ người thân mà không phát sinh thêm thủ tục thẩm định lại.
+      </div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex justify-between items-center text-base font-bold text-secondary hover:bg-surface-container-low/40 transition-colors" onclick="toggleAccordion('faq-3')">
+<span>Ứng dụng AI "Trợ Lý Sương Mai" hoạt động như thế nào và làm sao giảm phí tái tục?</span>
+<span class="material-symbols-outlined transition-transform duration-200" id="faq-3-icon">expand_more</span>
+</button>
+<div class="hidden p-5 pt-0 text-on-surface-variant text-xs md:text-sm leading-relaxed border-t border-outline-variant/10" id="faq-3">
+        "Trợ Lý Sương Mai" là tính năng trên ứng dụng Perpetuals sử dụng thị giác máy tính cục bộ (không lưu video riêng tư) để phát hiện khi bạn ngồi sai tư thế hơn 30 phút. Mỗi ngày duy trì tư thế tốt và hoàn thành các bài kéo giãn cơ khớp 3 phút, bạn sẽ tích lũy xu "Sương Mai". Điểm này được quy đổi tự động thành tiền giảm trừ thẳng vào kỳ đóng phí tái tục hàng năm (tối đa giảm đến 20% phí).
+      </div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex justify-between items-center text-base font-bold text-secondary hover:bg-surface-container-low/40 transition-colors" onclick="toggleAccordion('faq-4')">
+<span>Thời gian chờ 90 ngày được quy định như thế nào?</span>
+<span class="material-symbols-outlined transition-transform duration-200" id="faq-4-icon">expand_more</span>
+</button>
+<div class="hidden p-5 pt-0 text-on-surface-variant text-xs md:text-sm leading-relaxed border-t border-outline-variant/10" id="faq-4">
+        Thời gian chờ 90 ngày áp dụng cho các bệnh lý cơ xương khớp tích lũy phát sinh sau ngày hợp đồng có hiệu lực (như viêm thoái hóa khớp, thoát vị đĩa đệm mạn tính). <strong>Riêng chấn thương xương khớp do tai nạn giao thông, tai nạn sinh hoạt hoặc thể thao không áp dụng thời gian chờ</strong> - khách hàng được chi trả và bảo lãnh viện phí ngay lập tức từ ngày đầu tiên.
+      </div>
+</div>
+</div>
+</section>
+<!-- MODAL FORM ĐĂNG KÝ TƯ VẤN -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4" id="consultModal">
+<div class="bg-surface-container-lowest rounded-3xl max-w-lg w-full p-6 md:p-8 border border-outline-variant/30 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+<button class="absolute top-5 right-5 text-on-surface-variant hover:text-on-surface p-1 rounded-full hover:bg-surface-container" onclick="closeModal()">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+<div class="text-center mb-6">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-secondary mx-auto flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<h3 class="text-2xl font-extrabold text-secondary">
+        Tham Gia Sương Ban Mai
+      </h3>
+<p class="text-xs text-on-surface-variant mt-1">
+        Nhận bảng minh họa quyền lợi chi tiết &amp; kích hoạt ứng dụng AI Trợ Lý Sương Mai trong 15 phút.
+      </p>
+</div>
+<form class="space-y-4" onsubmit="handleConsultSubmit(event)">
+<div>
+<label class="block text-xs font-bold text-secondary mb-1">Họ và tên của bạn *</label>
+<input class="w-full bg-white border border-outline-variant/40 rounded-xl px-4 py-2.5 text-sm focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Nguyễn Văn An" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-bold text-secondary mb-1">Số điện thoại *</label>
+<input class="w-full bg-white border border-outline-variant/40 rounded-xl px-4 py-2.5 text-sm focus:border-primary focus:ring-1 focus:ring-primary" placeholder="0901 234 567" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-secondary mb-1">Năm sinh * (16 - 65 tuổi)</label>
+<input class="w-full bg-white border border-outline-variant/40 rounded-xl px-4 py-2.5 text-sm focus:border-primary focus:ring-1 focus:ring-primary" placeholder="1992" required="" type="number"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold text-secondary mb-1">Gói bảo vệ mong muốn</label>
+<select class="w-full bg-white border border-outline-variant/40 rounded-xl px-4 py-2.5 text-sm focus:border-primary focus:ring-1 focus:ring-primary">
+<option>Gói Vững Chãi - Nâng cao (170 triệu - Khuyên dùng)</option>
+<option>Gói Tự Tại - Toàn cầu bao gồm cả Mỹ (1.45 tỷ)</option>
+<option>Gói Dẻo Dai - Cơ bản (70 triệu)</option>
+</select>
+</div>
+<div class="text-[11px] text-on-surface-variant flex items-start gap-2 pt-1">
+<span class="material-symbols-outlined text-[16px] text-primary flex-shrink-0">shield</span>
+<span>Perpetuals cam kết bảo mật 100% dữ liệu sức khỏe cá nhân theo quy định pháp luật.</span>
+</div>
+<button class="w-full py-3.5 rounded-xl bg-primary text-on-primary font-bold shadow-md hover:bg-primary-container transition-all duration-200 mt-2 text-sm" type="submit">
+        Nhận bản tính phí &amp; Kích hoạt hồ sơ
+      </button>
+</form>
+</div>
+</div>
+<!-- FLOATING PERSISTENT HOTLINE BADGE -->
+<aside aria-label="Hotline hỗ trợ" class="fixed bottom-6 right-6 z-40">
+<a class="flex items-center gap-2.5 bg-primary hover:bg-primary-container text-white px-5 py-3 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105 border border-white/20" href="tel:18001786">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<div class="text-left font-bold tracking-tight">
+<div class="text-[10px] uppercase text-secondary-fixed tracking-wider">Hotline CSKH 24/7</div>
+<div class="text-sm">1800 1786</div>
+</div>
+</a>
+</aside>
+<!-- FOOTER -->
+<footer class="bg-secondary text-surface-container-highest/90 border-t border-secondary-fixed-dim/20">
+<div class="w-full px-4 md:px-12 py-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-secondary-fixed-dim/15">
+<!-- Brand Info -->
+<div class="md:col-span-5">
+<div class="flex items-center gap-3 mb-4">
+<a class="inline-block bg-white/95 px-3 py-1.5 rounded-xl shadow-sm" href="#">
+<img alt="Logo Perpetuals Sương Ban Mai" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W9Y7va1_CbHEf4Gv97k0_E7ND5KEDTCYhtpUs6B-36B7Ul3kBx05fjxUsxbYBDpYVgHwo2H2DpZPqtQvl0jATjhtQR06h7yG1onU-qx_MgQFskvS-o_AltRqw59Iv5PZEu8se3lmMyKV6mNZUquMIHdHVgRdGwGWCvLO5JWFwqz__HxCoHzxi_8WCWwpmmQoNj0D50_d-iDkN44SeLTP9LsPqqoYcgh0Y81cNl9UUgr7YmmII76e5XrO8"/>
+</a>
+</div>
+<p class="text-xs md:text-sm leading-relaxed mb-4 max-w-md text-surface-variant">
+          Sương Ban Mai - Giải pháp bảo vệ chuyên biệt về hệ vận động đầu tiên tại Việt Nam. Chuyển dịch tư duy chăm sóc chủ động, bảo hiểm chi trả ngoại trú Chiropractic, tiêm HA/PRP và kết nối y tế toàn cầu tại Hoa Kỳ.
+        </p>
+<div class="text-xs text-secondary-fixed font-medium">
+          Tập đoàn Bảo hiểm Perpetuals Việt Nam • Hotline: 1800 1786 (Miễn phí)
+        </div>
+</div>
+<!-- Navigation Links -->
+<div class="md:col-span-7 flex flex-wrap justify-between gap-6 text-xs md:text-sm">
+<div>
+<div class="text-secondary-fixed font-bold mb-3 uppercase tracking-wider text-xs">Cấu trúc 3 Gói</div>
+<ul class="space-y-2 text-surface-variant">
+<li><a class="hover:text-secondary-fixed transition-colors" href="#bang-quyen-loi">Gói Dẻo Dai (70 Triệu)</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#bang-quyen-loi">Gói Vững Chãi (170 Triệu)</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#bang-quyen-loi">Gói Tự Tại Toàn Cầu (1.45 Tỷ)</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#dac-quyen">Bộ Quyền Lợi "Sương Che Chở"</a></li>
+</ul>
+</div>
+<div>
+<div class="text-secondary-fixed font-bold mb-3 uppercase tracking-wider text-xs">Hệ sinh thái số</div>
+<ul class="space-y-2 text-surface-variant">
+<li><a class="hover:text-secondary-fixed transition-colors" href="#portal">Nộp E-Claims 24/7</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#portal">Thanh toán phí VietQR</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#dac-quyen">Trợ Lý AI Sương Mai</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#faq">Quy định thời gian chờ 90 ngày</a></li>
+</ul>
+</div>
+<div>
+<div class="text-secondary-fixed font-bold mb-3 uppercase tracking-wider text-xs">Pháp lý &amp; Tra cứu</div>
+<ul class="space-y-2 text-surface-variant">
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Quy tắc điều khoản (PDF)</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Chính sách bảo mật dữ liệu</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Bệnh viện bảo lãnh viện phí</a></li>
+<li><a class="text-secondary-fixed font-bold hover:underline" href="tel:18001786">Tổng đài: 1800 1786</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-surface-variant gap-4">
+<div>
+        © 2024 Bản quyền thuộc về Nhóm Perpetuals - Sản phẩm bảo hiểm chuyên biệt Sương Ban Mai. Mọi quyền được bảo lưu.
+      </div>
+<div class="flex space-x-6">
+<a class="hover:text-secondary-fixed transition-colors" href="#">Điều khoản sử dụng</a>
+<a class="hover:text-secondary-fixed transition-colors" href="#">Chính sách quyền riêng tư</a>
+<a class="hover:text-secondary-fixed transition-colors" href="#">Tra cứu chứng từ điện tử</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- JAVASCRIPT -->
+<script>
+    function switchPortalTab(tabNumber) {
+      for (let i = 1; i <= 3; i++) {
+        const content = document.getElementById(`tab-content-${i}`);
+        const btn = document.getElementById(`tab-btn-${i}`);
+        if (i === tabNumber) {
+          content.classList.remove('hidden');
+          btn.className = "pb-3 text-primary font-bold border-b-2 border-primary text-sm flex items-center gap-2 whitespace-nowrap";
+        } else {
+          content.classList.add('hidden');
+          btn.className = "pb-3 text-on-surface-variant hover:text-primary font-medium text-sm flex items-center gap-2 whitespace-nowrap";
+        }
+      }
+    }
+
+    function toggleAccordion(id) {
+      const content = document.getElementById(id);
+      const icon = document.getElementById(`${id}-icon`);
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    function openModal() {
+      document.getElementById('consultModal').classList.remove('hidden');
+    }
+    function closeModal() {
+      document.getElementById('consultModal').classList.add('hidden');
+    }
+
+    function handleConsultSubmit(e) {
+      e.preventDefault();
+      alert('Cảm ơn bạn! Yêu cầu đăng ký Sương Ban Mai đã được chuyển đến hệ thống thẩm định số Perpetuals. Chuyên viên sẽ liên hệ với bạn trong 15 phút.');
+      closeModal();
+    }
+
+    function handleClaimSubmit(e) {
+      e.preventDefault();
+      alert('Hồ sơ E-Claim của bạn đã được tải lên thành công! Mã số #CLM-2024-0583 đã được gửi đến ban thẩm định.');
+      switchPortalTab(3);
+    }
+
+    window.addEventListener('click', function(e) {
+      const modal = document.getElementById('consultModal');
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+</script>
+</body></html>
